@@ -18,7 +18,7 @@ export const store = new Vuex.Store({
   mutations: {
     getPosts: state => {
       let items = []
-      db.collection('items20').orderBy('created_at','desc').onSnapshot((snapshot) => {
+      db.collection('posts').orderBy('created_at','desc').onSnapshot((snapshot) => {
         let posts = []
         snapshot.forEach((doc) => {
           console.log(doc);

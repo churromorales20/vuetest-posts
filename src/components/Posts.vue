@@ -47,7 +47,9 @@ export default {
       });
     },
     insertPost(){
-      db.collection('items20').add({
+      this.post_title = '';
+      this.post_content = '';
+      db.collection('posts').add({
         title: this.post_title,
         content : this.post_content,
         created_at: Date.now()

@@ -1,4 +1,4 @@
-<template id="">
+<template> 
   <div class="home">
     <div class="home-header">
       Hello there <a href="#" @click="logout()">Logout</a>
